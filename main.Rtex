@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+
+\title{Markdowntest}
+\author{leakhildebrandt }
+\date{November 2020}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+# Markdown
+
+You can *easily* write Markdown in this Latex document! It is a bit "easier" and of course closer to Rmarkdown - but you can collaborate on Overleaf.
+
+## R
+
+It's even possible to include R code in your document by using Knitr:
+
+<<>>=
+# Create a sequence of numbers
+X = 2:10
+
+# Display basic statistical measures
+summary(X)
+
+@
+
+You can also decide not to include the code but only the results of the chunk: 
+<<echo=FALSE, cache=TRUE>>=
+# Create a sequence of numbers
+X = 2:10
+
+# Display basic statistical measures
+summary(X)
+
+@
+
+Finally, you can also include inline commands like here $\Sexpr{mean(X)}$
+
+Unfortunately, of course you can't include your whole data etc. to display results or plots... :/
+
+
+\end{document}
+
+
+
+
