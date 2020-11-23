@@ -1,0 +1,24 @@
+---
+title: Test Test Test!!
+output:
+ pdf_document:
+  keep_tex: true
+---
+# Hello!
+
+This is the Rmarkdown document!  
+But surprise: It is linked to overleaf via Github!
+
+
+And this is a line:  
+```{r}
+plot(1:100, 1:100)
+```
+
+You can knit this document, which will create a .tex file. Before you push it to Github, you have to run
+
+`./trimtex.sh filename.tex`
+
+in the shell!
+
+Then you can push the document!
