@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{latex-rmd}
 
 
 \title{Markdowntest}
@@ -45,6 +46,9 @@ summary(X)
 Finally, you can also include inline commands like here $\Sexpr{mean(X)}$
 
 Unfortunately, of course you can't include your whole data etc. to display results or plots... :/
+
+You can also include Rmarkdown content from Github (to be precise, the .tex files you generated when knitting...): 
+\input{rmd.tex}
 
 
 \end{document}
