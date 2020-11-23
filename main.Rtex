@@ -52,10 +52,10 @@ Unfortunately, of course you can't include your whole data etc. to display resul
 
 \section{Including Rmarkdown:}
 
-You can also include Rmarkdown content from Github (to be precise, the .tex files you generated when knitting...): 
+You can also include Rmarkdown content from Github (to be precise, the .tex files you generated when knitting...):
 \input{rmd.tex}
 
-
+Unfortunately, it is not possible to take the .tex file back into the Rmd file... So writing a manuscript in Papaja, getting feedback, incorporating those things back into R will not be easily possible. But making figures, writing parts of the methods/results in Rmarkdown and adding it to a tex file on overleaf is possible!
 \end{document}
 
 
