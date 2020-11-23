@@ -16,11 +16,14 @@
 \section{Introduction}
 
 
-# Markdown
+Markdown
 
-You can *easily* write Markdown in this Latex document! It is a bit "easier" and of course closer to Rmarkdown - but you can collaborate on Overleaf.
+You can *easily* write Markdown in this Latex document! Unfortunately, it doesn't seem to work with .Rtext files, which you need if you want to include R code...
+It is a bit "easier" and of course closer to Rmarkdown - but you can collaborate on Overleaf.
 
-## R
+But if you wanted to have a md document, you could add "\ usepackage{markdown}" to the top and wrap the markdown part in \ begin{markdown} and \ end{markdown} (without space!)
+
+R
 
 It's even possible to include R code in your document by using Knitr:
 
@@ -43,9 +46,11 @@ summary(X)
 
 @
 
-Finally, you can also include inline commands like here $\Sexpr{mean(X)}$
+Finally, you can also include inline commands like here: The mean of x is $\Sexpr{mean(X)}$
 
-Unfortunately, of course you can't include your whole data etc. to display results or plots... :/
+Unfortunately, of course you can't include your whole data etc. to display results or plots... :/ You can read in data etc. so I guess you can do a lot, but can't inspect your dataset etc.
+
+\section{Including Rmarkdown:}
 
 You can also include Rmarkdown content from Github (to be precise, the .tex files you generated when knitting...): 
 \input{rmd.tex}
